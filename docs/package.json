@@ -1,0 +1,28 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "vuelix documentation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build && nuxt export",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.15.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leoglme/vuelix.git"
+  },
+  "keywords": [
+    "vuejs"
+  ],
+  "author": "leoglme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leoglme/vuelix/issues"
+  },
+  "homepage": "https://github.com/Leoglme/vuelix#readme"
+}
