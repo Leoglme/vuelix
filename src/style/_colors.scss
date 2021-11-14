@@ -1,0 +1,19 @@
+/* GLOBAL COLORS */
+$vx-primary: rgb(31, 116, 255);
+$vx-secondary: rgb(121, 49, 177);
+$vx-danger: rgb(255, 71, 87);
+$vx-success: rgb(70, 201, 58);
+$vx-warning: rgb(255, 186, 0);
+$vx-dark: rgb(30, 30, 30);
+$vx-light: rgb(245, 245, 245);
+
+
+$vx-colors: (
+        'primary': $vx-primary,
+        'secondary': $vx-secondary,
+        'danger': $vx-danger,
+        'success': $vx-success,
+        'warning': $vx-warning,
+        'dark': $vx-dark,
+        'light': $vx-light
+);

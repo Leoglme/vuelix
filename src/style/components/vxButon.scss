@@ -1,0 +1,172 @@
+.vx-button {
+  transition: all 0.2s ease;
+  padding: 10px;
+  border: 0;
+  border-radius: $vx-radio;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  box-sizing: border-box;
+  background: transparent;
+  &.vx-radius {
+    border-radius: 50%;
+  }
+  &.large {
+    padding: 12px;
+    font-size: 1em;
+  }
+  &.small {
+    padding: 7px;
+    font-size: 0.7em;
+  }
+  &:disabled {
+    opacity: $vx-disabled-opacity;
+    cursor: default;
+    pointer-events: none;
+  }
+}
+.vx-button--icon {
+  z-index: 100;
+  display: block;
+  position: relative;
+  font-size: 1.125em;
+  transition: all 0.2s ease;
+}
+.vx-button--background {
+  border-radius: 50%;
+  width: 10px;
+  position: absolute;
+  height: 10px;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 60px 0 rgba(255,255,255,0.5);
+}
+.vx-button--text {
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  transition: $vx-transition;
+}
+.vx-button-border {
+  padding: 9px;
+}
+.vx-button-border.isActive .vx-button--text,
+.vx-button-flat.isActive .vx-button--text,
+.vx-button-border.isActive .vx-button--icon,
+.vx-button-flat.isActive .vx-button--icon {
+  color: #fff !important;
+}
+.vx-button-filled {
+  &:hover {
+    box-shadow: 0 9px 28px -9px;
+  }
+}
+.vx-button-line {
+  padding: 9px 10px;
+  border-radius: 0;
+  overflow: visible;
+  border-style: solid;
+  .vx-button-linex {
+    transition: all 0.2s ease;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+  }
+  &:hover {
+    .vx-button-linex {
+      width: 100% !important;
+    }
+  }
+}
+.vx-button-line:hover .vx-button--text,
+.vx-button-line:hover .vx-button--icon {
+  transform: translate(0, 2px);
+}
+.vx-button-gradient {
+  &:hover {
+    transform: translate(0, -2px);
+    box-shadow: 0 8px 25px -8px #aaa;
+  }
+  &:active {
+    transform: translate(0, 0);
+    box-shadow: 0 8px 0 -8px #aaa;
+  }
+}
+.vx-button-relief {
+  padding: 10px;
+  &:active {
+    transform: translate(0, 3px);
+    box-shadow: none !important;
+  }
+}
+.includeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.includeIconOnly {
+  width: 38px !important;
+  height: 38px !important;
+  &.large {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 0.7em;
+  }
+  &.small {
+    width: 28px !important;
+    height: 28px !important;
+    .vx-icon {
+      font-size: 0.85rem;
+    }
+  }
+}
+.vx-button-$vx-colors {
+&.vx-button-filled {
+  background: getColor($vx-colors) !important;
+  &:hover {
+    box-shadow: 0 8px 25px -8px getColor($vx-colors);
+  }
+}
+&.vx-button-flat {
+  border: none !important;
+}
+&.vx-button-line {
+  color: getColor($vx-colors);
+  border-color: getColor($vx-colors, 0.2);
+  .vx-button-linex {
+    background: getColor($vx-colors);
+  }
+}
+&.vx-button-gradient {
+  background: #640064;
+  background-image: linear-gradient(30deg, getColor($vx-colors, 1) 0%, getColor($vx-colors, 0.5) 100%) !important;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+}
+&.vx-button-relief {
+  background: getColor($vx-colors, 1);
+  box-shadow: 0 -3px 0 0 rgba(0,0,0,0.2) inset;
+}
+}
+.vx-button-$vx-colors.vx-button-border,
+                     .vx-button-$vx-colors.vx-button-flat {
+                                            border: 1px solid getColor($vx-colors);
+                                            background: transparent !important;
+                                            color: getColor($vx-colors);
+                                          }
+.vx-button-$vx-colors.vx-button-border .vx-button--text.isActive,
+                     .vx-button-$vx-colors.vx-button-flat .vx-button--text.isActive {
+                                            color: #fff !important;
+                                          }
+.vx-button-$vx-colors.vx-button-border:hover,
+                     .vx-button-$vx-colors.vx-button-flat:hover {
+                                            background: getColor($vx-colors, 0.08) !important;
+                                          }
+.vx-button-$vx-colors.vx-button-border .vx-button-backgroundx,
+                     .vx-button-$vx-colors.vx-button-flat .vx-button-backgroundx {
+                                            background: getColor($vx-colors);
+                                            box-shadow: inset 0 0 60px 0 getColor($vx-colors);
+                                          }

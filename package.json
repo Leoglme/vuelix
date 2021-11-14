@@ -1,26 +1,90 @@
 {
   "name": "vuelix",
   "version": "1.0.0",
-  "private": true,
+  "description": "Framework Components for Vue js",
+  "license": "MIT",
+  "author": "dibodev <contact@dibodev.com>",
+  "homepage": "https://vuelix.com",
+  "repository": "leoglme/vuelix",
+  "bugs": {
+    "url": "https://github.com/leoglme/vuelix/issues"
+  },
+  "keywords": [
+    "vuelix",
+    "vue",
+    "vuejs",
+    "vue-components",
+    "components",
+    "component",
+    "javascript",
+    "css",
+    "framework",
+    "ui",
+    "frontend",
+    "responsive"
+  ],
+  "main": "dist/vuelix.common.js",
+  "unpkg": "dist/vuelix.umd.min.js",
+  "jsdelivr": "dist/vuelix.umd.min.js",
+  "private": false,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build && nuxt export",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "test": "jest"
+    "dev": "vuepress dev docs",
+    "serve": "vue-cli-service serve --open",
+    "build": "vue build -t lib src/index.js --name vuelix",
+    "lint": "vue-cli-service lint",
+    "v": "npm version patch",
+    "v2": "npm version minor",
+    "p": "npm publish",
+    "deploy": "npm run build & git add . & git commit -m 'deploy' & npm run v & npm run p && git push",
+    "deploy2": "npm run build & git add . & git commit -m 'deploy' & npm run v2 & npm run p && git push",
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "sh scripts/deploy.sh",
+    "deployx": "npm run docs:deploy && npm run deploy",
+    "deployx2": "npm run docs:deploy && npm run deploy2",
+    "new:component": "sh scripts/newComponent.sh"
   },
   "dependencies": {
-    "@nuxt/content-theme-docs": "^0.11.0",
-    "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "babel-eslint": "^10.1.0",
+    "chalk": "^2.4.2",
+    "vue": "^2.6.9"
   },
   "devDependencies": {
-    "@nuxt/types": "~2.15.0",
-    "@nuxtjs/google-analytics": "^2.4.0",
-    "@vue/test-utils": "^1.2.1",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^27.0.5",
-    "jest": "^27.0.5",
-    "vue-jest": "^3.0.4"
-  }
+    "@babel/core": "^7.7.7",
+    "@vue/cli-plugin-babel": "^4.1.2",
+    "@vue/cli-plugin-eslint": "^3.0.3",
+    "@vue/cli-service": "^3.0.3",
+    "copy-webpack-plugin": "^4.5.2",
+    "eslint": "^5.1.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "file-loader": "^1.1.11",
+    "node-sass": "^5.0.0",
+    "prefixfree": "^1.0.0",
+    "sass-loader": "^10",
+    "stylus-loader": "^3.0.2",
+    "viewcode": "0.0.27",
+    "vuepress": "^0.14.10",
+    "webpack": "^4.19.0"
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

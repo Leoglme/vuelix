@@ -1,0 +1,21 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: none;
+  text-decoration: none;
+}
+.vuelix-app-is-rtl {
+  direction: rtl;
+}
+.vuelix-app-is-ltr {
+  direction: ltr;
+}
+
+@import './colors';
+@import './mixins';
+@import 'vars';
+@import './root';
+
+@import './components/vxButon';
