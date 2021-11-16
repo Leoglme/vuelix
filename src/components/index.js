@@ -1,1 +1,2 @@
-export { default as vsButton } from './vxButton'
+export { default as vxIcon } from './vxIcon'
+

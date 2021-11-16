@@ -5,13 +5,6 @@
     @touchend="onTouchEnd">
 
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
-
-    <!-- <CodeFund
-      propertyId="1d55a3b5-154d-4e29-a7b6-46017e50c663"
-      template="image-centered"
-      theme="light"
-    /> -->
-    <!-- <Carbon/> -->
      <sidebar-map :items="sortComponents" />
 
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
@@ -89,7 +82,8 @@ export default {
     },
     sortComponents () {
       return this.sidebarItems.map((items) => {
-        if(items.title == 'Components') {
+        if(items.title === 'Components') {
+          console.log(items.children);
           items.children = items.children.sort((a, b) => a.title.localeCompare(b.title))
         }
         return items

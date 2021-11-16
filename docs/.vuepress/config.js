@@ -1,28 +1,20 @@
 
 module.exports = {
-  base: '/vuesax/',
+  base: '/',
   head: [
-    ['link', { rel: 'icon', href: `/favicon-vuesax.png` }],
+    ['link', { rel: 'icon', href: `/vue.png` }],
     ['link', { rel: 'stylesheet', href: `https://fonts.googleapis.com/icon?family=Material+Icons` }],
-    // ['script',{},`(function(h,o,t,j,a,r){
-    //         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-    //         h._hjSettings={hjid:816179,hjsv:6};
-    //         a=o.getElementsByTagName('head')[0];
-    //         r=o.createElement('script');r.async=1;
-    //         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-    //         a.appendChild(r);
-    //     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`]
   ],
   ga:'UA-122319353-1',
   docsDir: 'docs',
   host:'localhost',
-  port: 7070,
-  title: 'Vue.js Framework Components - Vuesax',
+  port: 3000,
+  title: 'Vue.js Framework Components - Vuelix',
   description: 'We love what we do. Let us help you do what <b>You love.</b>',
   vueThemes:{
     linksHome:[],
     links:{
-      github:'https://github.com/lusaxweb/vuesax',
+      github:'https://github.com/leoglme/vuelix',
     },
     footer:[
       {
@@ -30,15 +22,11 @@ module.exports = {
         items:[
           {
             text:'GitHub',
-            link:'https://github.com/lusaxweb/vuesax'
-          },
-          {
-            text:'Discord',
-            link:'https://discord.gg/6AZNXEa'
+            link:'https://github.com/leoglme/vuelix'
           },
           {
             text:'Twitter',
-            link:'https://twitter.com/vuesax'
+            link:'https://twitter.com/dibodev'
           },
           {
             text:'Facebook',
@@ -109,13 +97,13 @@ module.exports = {
   },
   themeConfig: {
     // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'lusaxweb/vuesax',
+    repo: 'leoglme/vuelix',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: 'Contribute!',
     // Optional options for generating "Edit this page" link
     // if your docs are in a different repo from your main project:
-    docsRepo: 'lusaxweb/vuesax',
+    docsRepo: 'leoglme/vuelix',
     // if your docs are not at the root of the repo:
     docsDir: 'docs',
     // if your docs are in a specific branch (defaults to 'master'):
@@ -123,12 +111,10 @@ module.exports = {
     // defaults to true, set to false to disable
     editLinks: true,
     // custom text for edit link. Defaults to "Edit this page"
-    logo:'/vuesax-logo-vertical.png',
+    logo:'/Logo-Vuejs.png',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Documentation', link: '/development/' },
-      // { text: 'Blog', link: 'https://lusaxweb.github.io/vuesax-blog/articles/' },
-      { text: 'Contributors', link: '/contributors/' },
       {
         text: 'Ecosystem',
         items: [
@@ -164,7 +150,6 @@ module.exports = {
           }
         ]
       },
-      { text: 'Vuesax 4', link: 'https://vuesax.com/', new: true },
     ],
     sidebar: [
       {
@@ -172,7 +157,6 @@ module.exports = {
         collapsable: false,
         children: [
           '/development/',
-          '/development/contributing',
           '/development/whyVuesax',
          ]
       },
@@ -195,38 +179,9 @@ module.exports = {
         title: 'Components',
         collapsable: false,
         children: [
-          '/components/',
-          '/components/selects',
-          '/components/notifications',
-          '/components/switch',
-          '/components/checkbox',
-          '/components/radio',
-          '/components/input',
-          '/components/dialog',
-          '/components/tabs',
-          '/components/slider',
-          '/components/number',
-          '/components/tooltip',
-          '/components/upload',
-          '/components/loading',
-          '/components/popup',
-          '/components/avatar',
-          '/components/breadcrumb',
           '/components/alert',
-          '/components/chip',
-          '/components/divider',
-          '/components/progress',
-          '/components/card',
-          '/components/list',
-          '/components/pagination',
-          '/components/navbar',
-          '/components/sideBar',
-          '/components/dropDown',
-          '/components/table',
-          '/components/textarea',
-          '/components/collapse',
-          '/components/images'
-          // '/components/timePicker',
+          '/components/Icon',
+          '/components/modal',
           /*New Component*/
         ]
       },

@@ -2,20 +2,20 @@
   <div class="con-home-patreons">
     <h2>Patreon Sponsors</h2>
     <ul>
-      <li :class="{'patreonx':patreon.name}" :title="patreon.name?`Proudly patronized by ${patreon.name}`:'Become a Patron - Add your logo here'" v-for="patreon,index in patreons">
+      <li :class="{'patreonx':patreon.name}" :title="patreon.name?`Proudly patronized by ${patreon.name}`:'Become a Patron - Add your logo here'" v-for="(patreon,index) in patreons">
         <a target="_blank" :href="patreon.link?patreon.link:'https://www.patreon.com/luisdanielroviracontreras'" rel="noopener noreferrer">
           <img v-if="patreon.img" :src="$withBase(patreon.img)" alt="vuesax-patreon">
-          <vs-icon v-if="!patreon.img" class="" icon="add"></vs-icon>
+          <vx-icon v-if="!patreon.img" class="" icon="add"></vx-icon>
 
         </a>
       </li>
     </ul>
 
     <ul>
-      <li class="patreon2" :class="{'patreonx':patreon.name}" :title="patreon.name?`Proudly patronized by ${patreon.name}`:'Become a Patron - Add your logo here'" v-for="patreon,index in patreons2">
+      <li class="patreon2" :class="{'patreonx':patreon.name}" :title="patreon.name?`Proudly patronized by ${patreon.name}`:'Become a Patron - Add your logo here'" v-for="(patreon,index) in patreons2">
         <a target="_blank" :href="patreon.link?patreon.link:'https://www.patreon.com/luisdanielroviracontreras'" rel="noopener noreferrer">
           <img v-if="patreon.img" :src="$withBase(patreon.img)" alt="vuesax-patreon">
-          <vs-icon v-if="!patreon.img" class="" icon="add"></vs-icon>
+          <vx-icon v-if="!patreon.img" class="" icon="add"></vx-icon>
 
         </a>
       </li>
@@ -33,7 +33,6 @@
       </a>
       </div>
     </div>
-  </div>
 </template>
 
 <script>

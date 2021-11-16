@@ -49,7 +49,7 @@ API:
 
 ## Default
 
-To use the icon, use the `vs-icon` component. For the main parameter, pass the `icon` property that determines which icon to show. By default, the icon uses the **Google Material Icons** font library. Another library can be selected by passing the css class/classes for the library to `icon-pack`.  Only the Material Icons library is bundled with the framework.  Other libraries will have to be included implicitly.
+To use the icon, use the `vx-icon` component. For the main parameter, pass the `icon` property that determines which icon to show. By default, the icon uses the **Google Material Icons** font library. Another library can be selected by passing the css class/classes for the library to `icon-pack`.  Only the Material Icons library is bundled with the framework.  Other libraries will have to be included implicitly.
 
 ::: tip
 Vuesax uses the **Google Material Icons** font library. For a list of all available icons, visit the official [Material Icons page](https://material.io/icons/).
@@ -60,38 +60,38 @@ FontAwesome and other fonts libraries are supported. Simply use the `icon-pack` 
 <vuecode md>
 <div slot="demo">
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care"></vs-icon>
+  <vx-icon icon="child_care"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets"></vs-icon>
+  <vx-icon icon="pets"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android"></vs-icon>
+  <vx-icon icon="android"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer"></vs-icon>
+  <vx-icon icon="polymer"></vx-icon>
 </span>
 </div>
 <div slot="code">
 
 ```html
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care"></vs-icon>
+  <vx-icon icon="child_care"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets"></vs-icon>
+  <vx-icon icon="pets"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android"></vs-icon>
+  <vx-icon icon="android"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer"></vs-icon>
+  <vx-icon icon="polymer"></vx-icon>
 </span>
 ```
 
@@ -108,38 +108,38 @@ You can change the color of the icons as well, using color names, RGB, HEX, or V
 <vuecode md>
 <div slot="demo">
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care" color="red"></vs-icon>
+  <vx-icon icon="child_care" color="red"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets" color="primary"></vs-icon>
+  <vx-icon icon="pets" color="primary"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android" color="rgb(70, 150, 0)"></vs-icon>
+  <vx-icon icon="android" color="rgb(70, 150, 0)"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer" color="#BC1254"></vs-icon>
+  <vx-icon icon="polymer" color="#BC1254"></vx-icon>
 </span>
 </div>
 <div slot="code">
 
 ```html
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care" color="red"></vs-icon>
+  <vx-icon icon="child_care" color="red"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets" color="primary"></vs-icon>
+  <vx-icon icon="pets" color="primary"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android" color="rgb(70, 150, 0)"></vs-icon>
+  <vx-icon icon="android" color="rgb(70, 150, 0)"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer" color="#BC1254"></vs-icon>
+  <vx-icon icon="polymer" color="#BC1254"></vx-icon>
 </span>
 ```
 
@@ -164,38 +164,38 @@ You can change the size of the Avatar with the property `size` the allowed value
 <vuecode md>
 <div slot="demo">
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care" size="small" color="red"></vs-icon>
+  <vx-icon icon="child_care" size="small" color="red"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets" size="medium" color="primary"></vs-icon>
+  <vx-icon icon="pets" size="medium" color="primary"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android" size="large" color="rgb(70, 150, 0)"></vs-icon>
+  <vx-icon icon="android" size="large" color="rgb(70, 150, 0)"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer" size="75px" color="#BC1254"></vs-icon>
+  <vx-icon icon="polymer" size="75px" color="#BC1254"></vx-icon>
 </span>
 </div>
 <div slot="code">
 
 ```html
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care" size="small" color="red"></vs-icon>
+  <vx-icon icon="child_care" size="small" color="red"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets" size="medium" color="primary"></vs-icon>
+  <vx-icon icon="pets" size="medium" color="primary"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android" size="large" color="rgb(70, 150, 0)"></vs-icon>
+  <vx-icon icon="android" size="large" color="rgb(70, 150, 0)"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer" size="75px" color="#BC1254"></vs-icon>
+  <vx-icon icon="polymer" size="75px" color="#BC1254"></vx-icon>
 </span>
 ```
 
@@ -212,38 +212,38 @@ You can change the background color with the property `bg`.
 <vuecode md>
 <div slot="demo">
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care" size="small" bg="red" color="white"></vs-icon>
+  <vx-icon icon="child_care" size="small" bg="red" color="white"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets" size="medium" bg="primary"></vs-icon>
+  <vx-icon icon="pets" size="medium" bg="primary"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android" size="large" bg="rgb(70, 150, 0)"></vs-icon>
+  <vx-icon icon="android" size="large" bg="rgb(70, 150, 0)"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer" size="75px" bg="#BC1254"></vs-icon>
+  <vx-icon icon="polymer" size="75px" bg="#BC1254"></vx-icon>
 </span>
 </div>
 <div slot="code">
 
 ```html
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care" size="small" bg="red"></vs-icon>
+  <vx-icon icon="child_care" size="small" bg="red"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets" size="medium" bg="primary"></vs-icon>
+  <vx-icon icon="pets" size="medium" bg="primary"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android" size="large" bg="rgb(70, 150, 0)"></vs-icon>
+  <vx-icon icon="android" size="large" bg="rgb(70, 150, 0)"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer" size="75px" bg="#BC1254"></vs-icon>
+  <vx-icon icon="polymer" size="75px" bg="#BC1254"></vx-icon>
 </span>
 ```
 
@@ -264,38 +264,38 @@ To make the icon round, pass the property `round`.
 <vuecode md>
 <div slot="demo">
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care" size="small" bg="red" color="white" round></vs-icon>
+  <vx-icon icon="child_care" size="small" bg="red" color="white" round></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets" size="medium" bg="primary" round></vs-icon>
+  <vx-icon icon="pets" size="medium" bg="primary" round></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android" size="large" bg="rgb(70, 150, 0)" round></vs-icon>
+  <vx-icon icon="android" size="large" bg="rgb(70, 150, 0)" round></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer" size="75px" bg="#BC1254" round></vs-icon>
+  <vx-icon icon="polymer" size="75px" bg="#BC1254" round></vx-icon>
 </span>
 </div>
 <div slot="code">
 
 ```html
 <span>
-  <vs-icon icon="mood"></vs-icon>
+  <vx-icon icon="mood"></vx-icon>
 </span>
 <span>
-  <vs-icon icon="child_care" size="small" bg="red" round></vs-icon>
+  <vx-icon icon="child_care" size="small" bg="red" round></vx-icon>
 </span>
 <span>
-  <vs-icon icon="pets" size="medium" bg="primary" round></vs-icon>
+  <vx-icon icon="pets" size="medium" bg="primary" round></vx-icon>
 </span>
 <span>
-  <vs-icon icon="android" size="large" bg="rgb(70, 150, 0)" round></vs-icon>
+  <vx-icon icon="android" size="large" bg="rgb(70, 150, 0)" round></vx-icon>
 </span>
 <span>
-  <vs-icon icon="polymer" size="75px" bg="#BC1254" round></vs-icon>
+  <vx-icon icon="polymer" size="75px" bg="#BC1254" round></vx-icon>
 </span>
 ```
 

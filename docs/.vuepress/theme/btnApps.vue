@@ -1,7 +1,7 @@
 <template>
   <div ref="btnapps" :class="{'active': active}" class="con-btn-apps">
     <button @click="active = !active" title="Lusaxweb Apps" class="btn-apps">
-     <vs-icon class="" :icon="active ? 'chevron_left' : 'apps'" click="function(){}"></vs-icon>
+     <vx-icon class="" :icon="active ? 'chevron_left' : 'apps'" click="function(){}"></vx-icon>
     </button>
     <div class="con-ul">
       <ul>

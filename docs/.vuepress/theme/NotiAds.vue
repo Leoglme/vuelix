@@ -1,29 +1,9 @@
 <template>
   <div class="notiads">
-    <div class="sponsor-special">
-      <h4>Sponsorship</h4>
-      <div :title="'Beacome a Sponsor ' + titlex" class="sponsor-s">
-        <a target="_blank" href="https://www.patreon.com/bePatron?c=1567892">
-          <!-- <vs-icon class="" icon="add"></vs-icon> -->
-          <img v-if="ramdom == 1" :src="$withBase('/patreon/Coffe-Vuesax.png')" alt="">
-          <img v-if="ramdom == 2" :src="$withBase('/patreon/02-Vuesax-Pizza-Manuel-Rovira-Luis-Daniel-Rovira-Lusax-Web-Framework-ui-components-Vue-js-nuxt-vuepr.png')" alt="">
-          <img v-if="ramdom == 3" :src="$withBase('/patreon/03-Vuesax-Bronze-Manuel-Rovira-Luis-Daniel-Rovira-Lusax-Web-Framework-ui-components-Vue-js-nuxt-vuep.png')" alt="">
-          <img v-if="ramdom == 4" :src="$withBase('/patreon/02-Vuesax-Silver-Manuel-Rovira-Luis-Daniel-Rovira-Lusax-Web-Framework-ui-components-Vue-js-nuxt-vuep.png')" alt="">
-          <img v-if="ramdom == 5" :src="$withBase('/patreon/01-Vuesax-Gold-Manuel-Rovira-Luis-Daniel-Rovira-Lusax-Web-Framework-ui-components-Vue-js-nuxt-vuepre.png')" alt="">
-          <img v-if="ramdom == 6" :src="$withBase('/patreon/06-Vuesax-Diamond-Manuel-Rovira-Luis-Daniel-Rovira-Lusax-Web-Framework-ui-components-Vue-js-nuxt-vue.png')" alt="">
-          <img v-if="ramdom == 7" :src="$withBase('/patreon/07-Vuesax-Special-Manuel-Rovira-Luis-Daniel-Rovira-Lusax-Web-Framework-ui-components-Vue-js-nuxt-vue.png')" alt="">
-        </a>
-      </div>
-      <a target="_blank" href="https://www.patreon.com/bePatron?c=1567892" class="btn-patreon" rel="noopener noreferrer">
-        <img :src="$withBase('/patreon.webp')" alt="vuesax-patreon">
-        Become a patron
-      </a>
-    </div>
     <div class="noti">
 
     </div>
     <Carbon ref="carbon" />
-    <!-- <codefund ref="codefund" /> -->
   </div>
 </template>
 <script>

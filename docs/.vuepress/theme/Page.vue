@@ -26,14 +26,14 @@
         <span v-if="prev" class="prev">
 
           <router-link v-if="prev" class="prev" :to="prev.path">
-            <vs-icon class="" icon="keyboard_arrow_left"></vs-icon>
+            <vx-icon class="" icon="keyboard_arrow_left"></vx-icon>
             {{ prev.title || prev.path }}
           </router-link>
         </span>
         <span v-if="next" class="next">
           <router-link v-if="next" :to="next.path">
             {{ next.title || next.path }}
-            <vs-icon class="" icon="keyboard_arrow_right"></vs-icon>
+            <vx-icon class="" icon="keyboard_arrow_right"></vx-icon>
           </router-link>
 
 

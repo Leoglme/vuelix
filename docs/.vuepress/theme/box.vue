@@ -19,11 +19,12 @@ export default {
     let h = this.$el.querySelector('h2') || this.$el.querySelector('h3')
     if(h) {
     let a = h.querySelector('a')
-      // console.dir(a.attribut/es[0].value);
-      let hrefx = a.attributes[0].value.replace('#','')
-      a.parentNode.id = ''
-      a.closest('.con-box').id = hrefx
-
+      if(a){
+        // console.dir(a.attribut/es[0].value);
+        let hrefx = a.attributes[0].value.replace('#','')
+        a.parentNode.id = ''
+        a.closest('.con-box').id = hrefx
+      }
     }
   }
 }

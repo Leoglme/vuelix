@@ -1,16 +1,10 @@
 NAME="$1"
+NAME="${NAME^}"
 
-MAYUS="$1"
-MAYUS=($MAYUS)
-MAYUS="${MAYUS[@]^}"
-
-if [ -e "src/components/vx$MAYUS" ]
+if [ -e "src/components/vx$NAME" ]
 then
     echo "This component already exists in vuesax or the name is the same"
 else
-
-# crear documento del componente nuevo
-
 echo '---
 API:
  - name: myProp
@@ -19,7 +13,7 @@ API:
    description: My Description prop.
    default: null
 ---
-# '$MAYUS' **- new**
+# '$NAME' **- new**
 <box header>
   Text and description
 </box>
@@ -27,7 +21,8 @@ API:
 ## Default
 <vuecode md>
 <div slot="demo">
-  <Demos-'$MAYUS'-Default />
+<h1>'$NAME'</h1>
+  <Demos-'$NAME'-Default />
 </div>
 <div slot="code">
 ```html
@@ -36,58 +31,48 @@ API:
 </vuecode>
 </box>' > docs/components/$1.md
 
-# dir componentes
-
 cd src/components
-
-# crear la carpeta del nuevo componente
-
-mkdir vx$MAYUS
-
+mkdir vx$NAME
 cd -
-
-# crear archivo .vue del nuevo componente
-
 echo '<template lang="html">
-  <div
+  <button
     class="vx-component vx-'${NAME,,}'"
     v-bind="$attrs"
     v-on="$listeners">
-    Component vx'$MAYUS'
-  </div>
+    Component vx'$NAME'
+  </button>
 </template>
 <script>
 export default {
-  name: "vx'$MAYUS'",
+  name: "vx'$NAME'",
   inheritAttrs:false,
   data:()=>({
   }),
 }
-</script>' > src/components/vx$MAYUS/vx$MAYUS.vue
+</script>' > src/components/vx$NAME/vx$NAME.vue
 
 # editar config.js para agregar el componente nuevo al menu
 
-echo "import vxComponent from './vx$MAYUS'
+echo "import vxComponent from './vx$NAME'
 export default Vue => {
   Vue.component(vxComponent.name, vxComponent)
-}" > src/components/vx$MAYUS/index.js
+}" > src/components/vx$NAME/index.js
 
-echo ".vx-${NAME,,}
-  background: rgb(14, 142, 25)" > src/components/vx$MAYUS/main.scss
+echo -e "export { default as vx$NAME } from './vx$NAME' \n"  >> src/components/index.js
+
+echo ".vx-${NAME,,} {
+background: rgb(14, 142, 25)};"> src/components/vx$NAME/main.scss
 
 
 SRC="\'\/components\/$1\',\n          \/\*New Component\*\/"
-
 sed -e "s/\/\*New Component\*\//$SRC/" docs/.vuepress/config.js > script_tmp
 mv script_tmp docs/.vuepress/config.js
 
-# agregar ejemplo para documentos del nuevo componente
+cd docs/.vuepress/components/Demos || exit
 
-cd docs/.vuepress/components/Demos
+mkdir $NAME
 
-mkdir $MAYUS
-
-cd -
+cd - || exit
 
 echo '<template lang="html">
   <div>
@@ -99,12 +84,9 @@ export default {
 }
 </script>
 <style lang="scss">
-</style>' > docs/.vuepress/components/Demos/$MAYUS/Default.vue
+</style>' > docs/.vuepress/components/Demos/$NAME/Default.vue
 
-
-# agregar import
-
-IMPORT="export { default as vx$MAYUS } from '.\/vx$MAYUS'\n\/\/New Component import"
+IMPORT="export { default as vx$NAME } from '.\/vx$NAME'\n\/\/New Component import"
 
 sed -e "s/\/\/New Component import/$IMPORT/" src/components/index.js > script_tmp
 mv script_tmp src/components/index.js

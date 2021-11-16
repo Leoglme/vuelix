@@ -1,7 +1,7 @@
 ---
 home: true
-heroImage: /vuesax-logo-beta.png
-heroText: <b>Vuesax</b> Frontend <a target="_blank" href="https://vuejs.org/" rel="noopener noreferrer">Vue</a> Components
+heroImage: /Logo-Vuejs.png
+heroText: <b>Vuelix</b> Frontend <a target="_blank" href="https://vuejs.org/" rel="noopener noreferrer">Vue</a> Components
 heroBackgroundComponent: city
 features:
 - title: <b>Experience</b> design
@@ -24,9 +24,6 @@ features:
   details: Do you want to participate in our initiative? We are open to receive all kinds of contributions and suggestions..
   component: openSource
   github: true
-  button:
-    text: Contributing
-    link: /development/
 
 footer: MIT Licensed | Copyright © 2018-present Evan You
 vueThemes:

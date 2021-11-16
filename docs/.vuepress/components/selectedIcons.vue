@@ -1,65 +1,67 @@
 <template lang="html">
   <div class="con-select-icons">
     <div class="con-btn-icon">
-      <vs-button :class="{
+      <vx-button :class="{
         'visiblex':visible
         }"
-        @click="clickIcons"
-        vs-type="filled" >
+                 @click="clickIcons"
+                 vs-type="filled">
         change icon
-       </vs-button>
-       <vs-icon class="icon-final" :icon="iconx"></vs-icon>
+      </vx-button>
+      <vx-icon class="icon-final" :icon="iconx"></vx-icon>
     </div>
 
     <transition name="fade-icons">
-    <div
-    class="ul-icons"
-    v-show="visible"
-    :style="{
+      <div
+          class="ul-icons"
+          v-show="visible"
+          :style="{
       'left':lefx+'px',
       'top':topx+'px',
       }"
-     ref="ulx">
-    <ul
-    class="ulx"
-     >
-      <li @click="iconx=li,visible=false,removeEventListenerx()" v-for="li in icons">
-        <vs-icon class="" :icon="li"></vs-icon>
-      </li>
-    </ul>
-    <div class="con-btns">
-      <vs-row>
-        <vs-col vs-type="flex" vs-justify="flex-end" vs-align="center" vs-w="12">
-          <vs-button @click="visible=false,removeEventListenerx()"  vs-type="filled" color="rgb(230, 230, 230)" color-text="rgba(0, 0, 0, 0.8)" >Cancel</vs-button>
-        </vs-col>
-      </vs-row>
-    </div>
-    </div>
-  </transition>
+          ref="ulx">
+        <ul
+            class="ulx"
+        >
+          <li @click="iconx=li,visible=false,removeEventListenerx()" v-for="li in icons">
+            <vx-icon class="" :icon="li"></vx-icon>
+          </li>
+        </ul>
+        <div class="con-btns">
+          <vx-row>
+            <vx-col vs-type="flex" vs-justify="flex-end" vs-align="center" vs-w="12">
+              <vx-button @click="visible=false,removeEventListenerx()" vs-type="filled" color="rgb(230, 230, 230)"
+                         color-text="rgba(0, 0, 0, 0.8)">Cancel
+              </vx-button>
+            </vx-col>
+          </vx-row>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
-  props:{
-    vsIcon:{
-      type:String,
-      default:null,
+  props: {
+    vsIcon: {
+      type: String,
+      default: null,
     }
   },
-  watch:{
-    iconx(){
+  watch: {
+    iconx() {
 
-      this.$emit('update:vsIcon',this.iconx)
+      this.$emit('update:vsIcon', this.iconx)
     }
   },
-  data(){
+  data() {
     return {
-      iconx:this.vsIcon,
-      visible:false,
-      topx:0,
-      lefx:0,
-      icons:[
+      iconx: this.vsIcon,
+      visible: false,
+      topx: 0,
+      lefx: 0,
+      icons: [
         "3d_rotation",
         "ac_unit",
         "access_alarm",
@@ -996,37 +998,37 @@ export default {
 
     }
   },
-  beforeDestroy(){
+  beforeDestroy() {
     this.visible = false
     let ulx = this.$refs.ulx
     ulx.remove();
-    console.log('visible',this.visible);
+    console.log('visible', this.visible);
   },
-  mounted(){
+  mounted() {
     let ulx = this.$refs.ulx
     document.body.insertBefore(ulx, document.body.firstChild);
   },
-  methods:{
-    clickIcons(evt){
+  methods: {
+    clickIcons(evt) {
       this.lefx = evt.target.getBoundingClientRect().left - 5
       this.topx = evt.target.getBoundingClientRect().top - 5
       this.visible = true
-      setTimeout(()=> {
-        window.addEventListener('click',this.cerrar)
+      setTimeout(() => {
+        window.addEventListener('click', this.cerrar)
       }, 1);
-        window.addEventListener('mousewheel',this.cerrar)
-        window.addEventListener('touchmove',this.cerrar)
+      window.addEventListener('mousewheel', this.cerrar)
+      window.addEventListener('touchmove', this.cerrar)
     },
-    cerrar(e){
-      if(e.target.closest('.ul-icons')==null){
+    cerrar(e) {
+      if (e.target.closest('.ul-icons') == null) {
         this.visible = false
         this.removeEventListenerx()
       }
     },
-    removeEventListenerx(){
-      window.removeEventListener('click',this.cerrar)
-      window.removeEventListener('mousewheel',this.cerrar)
-      window.removeEventListener('touchmove',this.cerrar)
+    removeEventListenerx() {
+      window.removeEventListener('click', this.cerrar)
+      window.removeEventListener('mousewheel', this.cerrar)
+      window.removeEventListener('touchmove', this.cerrar)
     }
   }
 }
@@ -1037,22 +1039,28 @@ export default {
   transition: all .2s;
 
 }
-.fade-icons-enter, .fade-icons-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-icons-enter, .fade-icons-leave-to /* .fade-leave-active below version 2.1.8 */
+{
   /* opacity: 0; */
   transform: scale(0);
   opacity: 0;
 }
+
 .visiblex {
   /* transform: scale(1.2); */
   /* opacity: 0; */
 }
+
 .con-btns {
   position: relative;
   width: 100%;
 }
+
 .con-select-icons {
   position: relative;
 }
+
 .ul-icons {
   position: fixed;
   top: 0px;
@@ -1070,13 +1078,15 @@ export default {
   transform-origin: top left;
 
 }
-.ul-icons ul{
+
+.ul-icons ul {
   height: 100%;
   position: relative;
   width: 100%;
   overflow: auto;
   overflow-x: hidden;
 }
+
 .ul-icons li {
   float: left;
   width: 35px;
@@ -1090,19 +1100,22 @@ export default {
   border-radius: 5px;
   transition: all .2s ease;
 }
+
 .ul-icons li:hover {
   background: rgb(var(--morado));
   color: rgb(255, 255, 255);
 }
+
 .con-btn-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .icon-final {
   position: relative;
-  background: rgb(var(--morado),.1);
-  color: rgb(var(--morado),1);
+  background: rgb(var(--morado), .1);
+  color: rgb(var(--morado), 1);
   width: 40px;
   height: 40px;
   display: flex !important;

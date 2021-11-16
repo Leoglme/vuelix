@@ -13,6 +13,3 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export default install
-
-export {default as vsButton} from './components/vxButton'
-//New Component import

@@ -41,7 +41,8 @@
     "docs:deploy": "sh scripts/deploy.sh",
     "deployx": "npm run docs:deploy && npm run deploy",
     "deployx2": "npm run docs:deploy && npm run deploy2",
-    "new:component": "sh scripts/newComponent.sh"
+    "new:component": "sh scripts/newComponent.sh",
+    "delete:component": "sh scripts/deleteComponent.sh"
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",

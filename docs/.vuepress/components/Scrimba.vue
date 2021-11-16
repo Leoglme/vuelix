@@ -1,6 +1,6 @@
 <template>
   <a target="_blank" :href="href" class="con-scrimba">
-    <vs-icon class="con-btn-play" icon="play_arrow"></vs-icon>
+    <vx-icon class="con-btn-play" icon="play_arrow"></vx-icon>
     <span class="text">{{ text }}</span>
   </a>
 </template>

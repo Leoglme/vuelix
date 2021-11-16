@@ -8,7 +8,7 @@
       <ul>
         <li title="Become a Sponsor" v-for="sponsor in 3">
           <a target="_blank" href="https://www.patreon.com/bePatron?c=1567892">
-            <vs-icon v-if="!sponsor.img" class="" icon="add"></vs-icon>
+            <vx-icon v-if="!sponsor.img" class="" icon="add"></vx-icon>
           </a>
         </li>
       </ul>
