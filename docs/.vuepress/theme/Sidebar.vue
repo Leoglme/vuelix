@@ -3,16 +3,7 @@
     <div class="c-sidebar">
 
     <slot name="top"/>
-    <div class="sponsor-sidebar">
-      <h4>Sponsors</h4>
-      <ul>
-        <li title="Become a Sponsor" v-for="sponsor in 3">
-          <a target="_blank" href="https://www.patreon.com/bePatron?c=1567892">
-            <vx-icon v-if="!sponsor.img" class="" icon="add"></vx-icon>
-          </a>
-        </li>
-      </ul>
-    </div>
+
 
     <SearchBox v-if="$site.themeConfig.search !== false"/>
 
@@ -35,10 +26,10 @@
 
 <script>
 import SidebarGroup from './SidebarGroup.vue'
-import SidebarLink, { groupHeaders } from './SidebarLink.vue'
+import SidebarLink from './SidebarLink.vue'
 import NavLinks from './NavLinks.vue'
 import SearchBox from './SearchBox.vue'
-import { isActive, resolveSidebarItems } from './util'
+import { isActive } from './util'
 
 export default {
   components: { SidebarGroup, SidebarLink, NavLinks, SearchBox },

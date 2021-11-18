@@ -1,16 +1,16 @@
 <script>
-import { isActive, hashRE, groupHeaders } from './util'
+import {isActive, hashRE, groupHeaders} from './util'
 
 export default {
   functional: true,
   props: ['item'],
-  render (h, { parent: { $page, $site, $route }, props: { item }}) {
+  render(h, {parent: {$page, $site, $route}, props: {item}}) {
     let tag = null
-    if(item.title.search('- new')!=-1){
+    if (item.title.search('- new') !== -1) {
       tag = 'new'
-    } else if (item.title.search('- update')!=-1){
+    } else if (item.title.search('- update') !== -1) {
       tag = 'update'
-    } else if (item.title.search('- ssr')!=-1){
+    } else if (item.title.search('- ssr') !== -1) {
       tag = 'ssr'
     }
     // use custom active class matching logic
@@ -19,12 +19,12 @@ export default {
     // for sidebar: auto pages, a hash link should be active if one of its child
     // matches
     const active = item.type === 'auto'
-      ? selfActive || item.children.some(c => isActive($route, item.basePath + '#' + c.slug))
-      : selfActive
+        ? selfActive || item.children.some(c => isActive($route, item.basePath + '#' + c.slug))
+        : selfActive
     const link = renderLink(h, item.path, item.title || item.path, active, tag)
     const configDepth = $page.frontmatter.sidebarDepth != null
-      ? $page.frontmatter.sidebarDepth
-      : $site.themeConfig.sidebarDepth
+        ? $page.frontmatter.sidebarDepth
+        : $site.themeConfig.sidebarDepth
     const maxDepth = configDepth == null ? 1 : configDepth
     if (item.type === 'auto') {
       return [link, renderChildren(h, item.children, item.basePath, $route, maxDepth)]
@@ -37,8 +37,8 @@ export default {
   }
 }
 
-function renderLink (h, to, text, active, activeTag) {
-  let textx = activeTag?text.replace('- '+activeTag,''):text
+function renderLink(h, to, text, active, activeTag) {
+  let textx = activeTag ? text.replace('- ' + activeTag, '') : text
   return h('router-link', {
     props: {
       to,
@@ -50,14 +50,14 @@ function renderLink (h, to, text, active, activeTag) {
       'sidebar-link': true
     }
 
-  }, [textx,activeTag?h('span',{class: 'span-new-update'},activeTag):null])
+  }, [textx, activeTag ? h('span', {class: 'span-new-update'}, activeTag) : null])
 }
 
-function renderChildren (h, children, path, route, maxDepth, depth = 1) {
+function renderChildren(h, children, path, route, maxDepth, depth = 1) {
   if (!children || depth > maxDepth) return null
-  return h('ul', { class: 'sidebar-sub-headers' }, children.map(c => {
+  return h('ul', {class: 'sidebar-sub-headers'}, children.map(c => {
     const active = isActive(route, path + '#' + c.slug)
-    return h('li', { class: 'sidebar-sub-header' }, [
+    return h('li', {class: 'sidebar-sub-header'}, [
       renderLink(h, '#' + c.slug, c.title, active),
       renderChildren(h, c.children, path, route, maxDepth, depth + 1)
     ])
@@ -80,15 +80,18 @@ function renderChildren (h, children, path, route, maxDepth, depth = 1) {
   padding-right: 4px;
   line-height: 15px;
   top: 50%;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   text-transform: capitalize;
+
 .sidebar-sub-header
   a
     opacity: 1 !important;
+
 .sidebar .sidebar-sub-headers
   padding-left 1rem
   font-size 0.95em
   display none
+
 a.sidebar-link
   position: relative;
   font-weight 400
@@ -101,20 +104,25 @@ a.sidebar-link
   box-sizing: border-box
   opacity: .7;
   transition: all .3s ease;
+
   &:hover
     color $accentColor
     opacity: 1 !important;
+
   &.active
     font-weight 600
     color $accentColor
     border-left-color $accentColor
     opacity: 1 !important;
+
   .sidebar-group &
     padding-left 2rem
+
   .sidebar-sub-headers &
     padding-top 0.25rem
     padding-bottom 0.25rem
     border-left none
+
     &.active
       font-weight 500
       opacity: 1 !important;

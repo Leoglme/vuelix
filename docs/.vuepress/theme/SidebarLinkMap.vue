@@ -5,7 +5,7 @@ export default {
   functional: true,
   props: ['item'],
   render(h, {parent: {$page, $site, $route}, props: {item}}) {
-    let tag = null
+    let tag = null;
     if (item.title.search('- new') !== -1) {
       tag = 'new'
     } else if (item.title.search('- update') !== -1) {

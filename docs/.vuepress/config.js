@@ -2,8 +2,7 @@
 module.exports = {
   base: '/',
   head: [
-    ['link', { rel: 'icon', href: `/vue.png` }],
-    ['link', { rel: 'stylesheet', href: `https://fonts.googleapis.com/icon?family=Material+Icons` }],
+    ['link', { rel: 'icon', href: `/icon/favicon.ico` }],
   ],
   ga:'UA-122319353-1',
   docsDir: 'docs',
@@ -111,7 +110,7 @@ module.exports = {
     // defaults to true, set to false to disable
     editLinks: true,
     // custom text for edit link. Defaults to "Edit this page"
-    logo:'/Logo-Vuejs.png',
+    logo:'/svg/vuelix.svg',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Documentation', link: '/development/' },
@@ -161,13 +160,6 @@ module.exports = {
          ]
       },
       {
-        title: 'Layout',
-        collapsable: false,
-        children: [
-          '/layout/',
-         ]
-      },
-      {
         title: 'Theme',
         collapsable: false,
         children: [
@@ -180,8 +172,7 @@ module.exports = {
         collapsable: false,
         children: [
           '/components/alert',
-          '/components/Icon',
-          '/components/modal',
+          '/components/icon',
           /*New Component*/
         ]
       },

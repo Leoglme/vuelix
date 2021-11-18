@@ -1,11 +1,5 @@
 <template>
   <div class="sidebar-group" :class="{ first, collapsable }">
-    <!-- <p class="sidebar-heading" :class="{ open }" @click="$emit('toggle')">
-      <span>{{ item.title }}</span>
-      <span class="arrow"
-        v-if="collapsable"
-        :class="open ? 'down' : 'right'"></span>
-    </p> -->
     <DropdownTransition>
       <ul class="sidebar-group-items" ref="items" v-if="open || !collapsable">
         <li v-for="child in item.children">

@@ -1,14 +1,6 @@
 <template>
 
   <div class="page">
-    <!-- <div class="color">
-      <div class="colorMover">
-
-      </div>
-    </div> -->
-
-    <!-- <div id="codefund_ad"></div> -->
-
     <transition name="contentx">
       <Content class="content-pagex" :custom="false"/>
     </transition>
@@ -24,7 +16,6 @@
     <div class="content page-nav" v-if="prev || next">
       <p class="inner">
         <span v-if="prev" class="prev">
-
           <router-link v-if="prev" class="prev" :to="prev.path">
             <vx-icon class="" icon="keyboard_arrow_left"></vx-icon>
             {{ prev.title || prev.path }}
@@ -32,11 +23,9 @@
         </span>
         <span v-if="next" class="next">
           <router-link v-if="next" :to="next.path">
-            {{ next.title || next.path }}
+            {{ next.title.split('-')[0] || next.path }}
             <vx-icon class="" icon="keyboard_arrow_right"></vx-icon>
           </router-link>
-
-
         </span>
       </p>
     </div>

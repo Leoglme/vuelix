@@ -35,18 +35,14 @@
     "v": "npm version patch",
     "v2": "npm version minor",
     "p": "npm publish",
-    "deploy": "npm run build & git add . & git commit -m 'deploy' & npm run v & npm run p && git push",
-    "deploy2": "npm run build & git add . & git commit -m 'deploy' & npm run v2 & npm run p && git push",
     "docs:build": "vuepress build docs",
-    "docs:deploy": "sh scripts/deploy.sh",
-    "deployx": "npm run docs:deploy && npm run deploy",
-    "deployx2": "npm run docs:deploy && npm run deploy2",
     "new:component": "sh scripts/newComponent.sh",
     "delete:component": "sh scripts/deleteComponent.sh"
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",
     "chalk": "^2.4.2",
+    "nprogress": "^0.2.0",
     "vue": "^2.6.9"
   },
   "devDependencies": {
@@ -63,6 +59,7 @@
     "sass-loader": "^10",
     "stylus-loader": "^3.0.2",
     "viewcode": "0.0.27",
+    "vue-prismjs": "^1.2.0",
     "vuepress": "^0.14.10",
     "webpack": "^4.19.0"
   },

@@ -8,16 +8,6 @@
       <DropdownLink v-if="item.type === 'links'" :item="item"/>
       <NavLink v-else :item="item"/>
     </div>
-
-    <!-- repo link -->
-    <!-- <a v-if="repoLink"
-      :href="repoLink"
-      class="repo-link flaticon-github"
-      target="_blank"
-      rel="noopener noreferrer">
-      <! {{ repoLabel }} -->
-       <!-- <OutboundLink/> -->
-    <!-- </a> -->
   </nav>
 </template>
 

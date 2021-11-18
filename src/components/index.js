@@ -1,2 +1,3 @@
-export { default as vxIcon } from './vxIcon'
+
+export { default as vxIcon } from './vxIcon' 
 

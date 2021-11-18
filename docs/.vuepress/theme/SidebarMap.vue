@@ -3,9 +3,6 @@
     <div class="c-sidebar-map">
     <ul class="sidebar-links-map" v-if="items.length">
       <li v-for="(item, i) in items">
-        <!-- <pre>
-          {{items}}
-        </pre> -->
         <SidebarGroupMap v-if="item.type === 'group'"
           v-show="true"
           :item="item"
@@ -13,7 +10,7 @@
           :open="i === openGroupIndex"
           :collapsable="item.collapsable"
           @toggle="toggleGroup(i)"/>
-        <!-- <SidebarLink v-else :item="item"/> -->
+         <SidebarLink v-else :item="item"/>
       </li>
     </ul>
     <slot name="bottom"/>

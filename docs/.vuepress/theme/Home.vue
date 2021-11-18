@@ -2,10 +2,6 @@
 
   <div class="con-home vs-component">
 
-    <div class="logo-g">
-      <img  v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero">
-    </div>
-
   <div class="home">
     <div v-if="data.heroImage" :class="{'doc-activo':doc}" class="doc-img">
       <img :src="$withBase(data.heroImage)" alt="">
@@ -23,13 +19,12 @@
     <div class="hero">
 
       <h1 v-if="data.heroText" v-html="data.heroText"></h1>
-      <!-- <h1 v-else>{{$title || 'hello'}}</h1> -->
       <p v-html="data.tagline || $description || 'Welcome to your VuePress site'" class="description"></p>
       <p class="action" v-if="data.actionText && data.actionLink">
         <NavLink class="action-button" :item="actionLink"/>
       </p>
-      <p class="actions">
-        <!-- {{data.vueThemes.actionsLinks}} -->
+      <div class="actions">
+
         <ul>
           <li @mouseenter="doc=true" @mouseleave="doc=false" v-for="action in data.vueThemes.actionsLinks">
             <router-link
@@ -56,18 +51,10 @@
           </li>
 
         </ul>
-      </p>
-    </div>
-    </div>
-    <!-- <div class="features" v-if="data.features && data.features.length">
-      <div class="feature" v-for="feature in data.features">
-        <h2>{{ feature.title }}</h2>
-        <p>{{ feature.details }}</p>
       </div>
-    </div> -->
+    </div>
+    </div>
     <div class="contenedor">
-
-      <home-patreons/>
 
     <div class="features" v-if="data.features && data.features.length">
       <div class="feature" v-for="feature in data.features">
@@ -109,14 +96,6 @@
 
     <Content custom/>
     </div>
-    <!-- <div class="footer" v-if="data.footer">
-      {{ data.footer }}
-    </div> -->
-    <!-- <div class="con-contribuitors">
-      <contributors :title="title" :repo="this.$site.themeConfig.repo" contributors="all"/>
-    </div> -->
-
-
     <partners />
 
 
@@ -125,12 +104,11 @@
 
       <Footer/>
   </div>
-  </div>
 
 </template>
 
 <script>
-// <!-- Hotjar Tracking Code for https://lusaxweb.github.io/vuesax/ -->
+
 
 
 
@@ -138,11 +116,10 @@ import trofeos from './trofeos.vue'
 import NavLink from './NavLink.vue'
 import Footer from './Footer.vue'
 import contributors from './contributors.vue'
-import homePatreons from './homePatreons.vue'
 import homeTemplates from './HomeTemplates.vue'
 import Partners from './Partners.vue'
 export default {
-  components: { NavLink, Footer, contributors, trofeos, homePatreons, Partners, homeTemplates },
+  components: { NavLink, Footer, contributors, trofeos, Partners, homeTemplates },
   data(){
     return {
       star:0,

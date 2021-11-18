@@ -1,6 +1,6 @@
 <template lang="html">
-  <div v-if="api"  id="vs-api" class="con-api">
-    <h2 class="h2">API <a href="#vs-api">#</a> </h2>
+  <div v-if="api"  id="vx-props" class="con-api">
+    <h2 class="h2">Props <a href="#vx-props">#</a></h2>
     <table>
       <thead>
         <tr>

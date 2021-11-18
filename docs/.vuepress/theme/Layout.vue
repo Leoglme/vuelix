@@ -83,7 +83,6 @@ export default {
     sortComponents () {
       return this.sidebarItems.map((items) => {
         if(items.title === 'Components') {
-          console.log(items.children);
           items.children = items.children.sort((a, b) => a.title.localeCompare(b.title))
         }
         return items
@@ -247,5 +246,5 @@ function updateMetaTags (meta, current) {
     padding-right 0px
     padding 10px
 </style>
-<style src="prismjs/themes/prism-tomorrow.css"></style>
+<style src="prismjs/themes/prism.css"></style>
 <style src="./styles/theme.styl" lang="stylus"></style>

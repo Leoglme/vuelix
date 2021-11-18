@@ -41,30 +41,18 @@
           <vx-icon class="" icon="get_app"></vx-icon>
           <span>Download</span>
         </a>
-
-      <div title="Change Color Primary" v-if="!$page.frontmatter.home" class="con-colors-input">
-        <div :style="{
-          'box-shadow': '0px 5px 20px -4px rgba(var(--vs-primary),.9)',
-          'background': 'rgb(var(--vs-primary))'}" class="con-inputx-c">
-          <input @change="changeColor($event.target.value)" type="color" name="" :value="color">
-        </div>
-      </div>
-
-      <btnApps />
     </div>
-    <!-- colors change -->
 
   </header>
 </template>
 
 <script>
-import btnApps from './btnApps.vue'
 import SidebarButton from './SidebarButton.vue'
 import SearchBox from './SearchBox.vue'
 import NavLinks from './NavLinks.vue'
 
 export default {
-  components: { SidebarButton, NavLinks, SearchBox, btnApps},
+  components: { SidebarButton, NavLinks, SearchBox},
   data(){
     return {
       color: '#008afb',
@@ -217,8 +205,6 @@ export default {
     display flex
     align-items center
     // justify-content flex-start
-  a, span, img
-    display block
   .logo
     height $navbarHeight - 0.7rem
     // min-width $navbarHeight - 1.4rem
