@@ -3,7 +3,7 @@ NAME="${NAME^}"
 
 if [ -e "src/components/vx$NAME" ]
 then
-    echo "This component already exists in vuesax or the name is the same"
+    echo "This component already exists in vuelix or the name is the same"
 else
 echo '---
 API:

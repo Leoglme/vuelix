@@ -5,7 +5,7 @@ heroText: <b>Vuelix</b> Frontend <a target="_blank" href="https://vuejs.org/" re
 heroBackgroundComponent: city
 features:
 - title: <b>Experience</b> design
-  details: We love that our users enjoy creating with us. In Vuesax, we make this the best experience for you, because it's fun.
+  details: We love that our users enjoy creating with us. In Vuelix, we make this the best experience for you, because it's fun.
   component: mueble
   github: true
   button:
@@ -20,14 +20,14 @@ features:
     text: Layout
     link: /layout/
 
-- title: Vuesax is <b>open source</b>
+- title: Vuelix is <b>open source</b>
   details: Do you want to participate in our initiative? We are open to receive all kinds of contributions and suggestions..
   component: openSource
   github: true
 
 footer: MIT Licensed | Copyright © 2018-present Evan You
 vueThemes:
-  github: 'https://github.com/lusaxweb/vuesax'
+  github: 'https://github.com/leoglme/vuelix'
   actionsLinks:
   - link: '/development/'
     text: 'Get Started'
