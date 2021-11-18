@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cole7746/vuelix.com
+    - /bin/cp docs/.vuepress/dist $DEPLOYPATH
