@@ -36,7 +36,7 @@
     "v2": "npm version minor",
     "p": "npm publish",
     "docs:build": "vuepress build docs",
-    "docs:deploy": "sh scripts/docsDeploy.shs",
+    "docs:deploy": "sh scripts/docDeploy.sh",
     "deploy": "sh scripts/deploy.sh",
     "new:component": "sh scripts/newComponent.sh",
     "delete:component": "sh scripts/deleteComponent.sh"
