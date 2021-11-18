@@ -6,7 +6,6 @@ node_modules
 .env.*.local
 *.map
 dist/demo.html
-docs/.vuepress/dist/
 
 # Log files
 npm-debug.log*
