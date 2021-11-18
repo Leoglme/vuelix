@@ -1,22 +1,39 @@
 <template>
   <div class="container">
-    <vx-icon icon="home" :margin="16"/>
-    <vx-icon icon="home" color="#90caf9" :margin="16"/>
-    <vx-icon icon="home" color="#ce93d8" :margin="16"/>
-    <vx-icon icon="home" color="rgb(102, 187, 106)" :margin="16"/>
-    <vx-icon icon="home" color="rgb(66, 184, 131)" :margin="16"/>
-    <vx-icon icon="home" color="rgba(66, 184, 131, .3)" :margin="16"/>
-    <vx-icon icon="home" color="rgb(233, 30, 99)" :margin="16"/>
+    <div class="row" v-for="theme in themes">
+      <p class="icon_label">{{ theme }}</p>
+      <vx-icon icon="delete" :themes="theme"/>
+      <vx-icon icon="delete_forever" :themes="theme"/>
+    </div>
   </div>
 </template>
 <script>
 export default {
+  data () {
+    return {
+      themes: ['filled', 'outlined', 'rounded', 'sharp', 'two-tone']
+    }
+  }
 }
 </script>
-<style>
+<style scoped>
  .container {
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    padding: 24px;
+   flex-direction: column;
+ }
+ .icon_label {
+   font-size: 1rem;
+   line-height: 1.5;
+   letter-spacing: 0.00938em;
+   text-transform: capitalize;
+ }
+
+ .row {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40%;
  }
 </style>

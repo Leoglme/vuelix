@@ -99,7 +99,45 @@ Import icons using one of these two options:
   ```javascript
   import Icon from 'vue-material-icon';
   ```
-  
+
+<vuecode md>
+<div slot="demo">
+  <Demos-Icon-Default />
+</div>
+<div slot="code">
+
+```html
+<template>
+  <div class="container">
+    <div class="row" v-for="theme in themes">
+      <p class="icon_label">{{ theme }}</p>
+      <vx-icon icon="delete" :themes="theme"/>
+      <vx-icon icon="delete_forever" :themes="theme"/>
+    </div>
+  </div>
+</template>
+<script>
+  export default {
+    data () {
+      return {
+        themes: ['filled', 'outlined', 'rounded', 'sharp', 'two-tone']
+      }
+    }
+  }
+</script>
+
+```
+
+
+</div>
+</vuecode>
+</box>
+
+
+<box>
+
+## Color
+
 <vuecode md>
 <div slot="demo">
   <Demos-Icon-Color />

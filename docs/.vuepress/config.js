@@ -2,7 +2,7 @@
 module.exports = {
   base: '/',
   head: [
-    ['link', { rel: 'icon', href: `/icon/favicon.ico` }],
+    ['link', { rel: 'icon', href: `/icon/favicon.ico` }]
   ],
   ga:'UA-122319353-1',
   docsDir: 'docs',
