@@ -64,9 +64,7 @@
     "webpack": "^4.19.0"
   },
   "babel": {
-    "presets": [
-      "@vue/app"
-    ]
+    "presets": [ [ "@vue/app", { "useBuiltIns": "entry" } ] ]
   },
   "eslintConfig": {
     "root": true,
