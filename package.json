@@ -1,6 +1,6 @@
 {
   "name": "vuelix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Framework Components for Vue js",
   "license": "MIT",
   "author": "dibodev <contact@dibodev.com>",
@@ -64,7 +64,14 @@
     "webpack": "^4.19.0"
   },
   "babel": {
-    "presets": [ [ "@vue/app", { "useBuiltIns": "entry" } ] ]
+    "presets": [
+      [
+        "@vue/app",
+        {
+          "useBuiltIns": "entry"
+        }
+      ]
+    ]
   },
   "eslintConfig": {
     "root": true,
