@@ -1,7 +1,8 @@
 /* GLOBAL COLORS */
-$vx-primary: rgb(31, 116, 255);
+$vx-primary: rgb(66, 184, 131);
 $vx-secondary: rgb(121, 49, 177);
 $vx-danger: rgb(255, 71, 87);
+$vx-info: rgb(0, 127, 255);
 $vx-success: rgb(70, 201, 58);
 $vx-warning: rgb(255, 186, 0);
 $vx-dark: rgb(30, 30, 30);
@@ -15,5 +16,6 @@ $vx-colors: (
         'success': $vx-success,
         'warning': $vx-warning,
         'dark': $vx-dark,
+        'info': $vx-info,
         'light': $vx-light
 );

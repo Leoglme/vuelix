@@ -37,12 +37,12 @@ yarn add vuelix
 Install the package in your project directory with:
 
 <Demos-DemoBox language="bash" plugins="command-line" code="
-npm install vuelix
+npm install vue-snackbar
 ">
 </Demos-DemoBox>
 
 <Demos-DemoBox language="bash" plugins="command-line" code="
-yarn add vuelix
+yarn add vue-snackbar
 ">
 </Demos-DemoBox>
 
@@ -57,18 +57,18 @@ Import icons using one of these two options:
 - Option 1:
 
   ```javascript
-  import {vxIcon} from 'vuelix';
+  import {vxNotification} from 'vuelix';
   ```
 
 - Option 2:
 
   ```javascript
-  import Icon from 'vue-material-icon';
+  import vxNotification from 'vue-snackbar';
   ```
 
 <vuecode md>
 <div slot="demo">
-  <Demos-Icon-Default />
+  <Demos-Notification-Default />
 </div>
 <div slot="code">
 

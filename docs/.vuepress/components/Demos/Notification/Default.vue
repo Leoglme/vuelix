@@ -1,6 +1,12 @@
 <template lang="html">
   <div>
-    <button @click="handleDefault">Default</button>
+    <vx-button @click="handleDefault">Default</vx-button>
+    <vx-button
+        danger
+        flat
+        @click="handleDefault">
+      Default
+    </vx-button>
   </div>
 </template>
 <script>
