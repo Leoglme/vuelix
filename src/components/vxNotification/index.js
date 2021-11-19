@@ -71,7 +71,7 @@ Vue.toasted.register('success', (payload) => {
 
 const MyPlugin = {
   install(Vue, options) {
-    Vue.prototype.$notification = function (title, message) {
+    Vue.prototype.$notification = function ({title, message}) {
       return Vue.toasted.global.default({
         message: `
           <div style="display: flex; flex-direction: column">
@@ -80,7 +80,7 @@ const MyPlugin = {
     </div>`
       });
     }
-    Vue.prototype.$successNotification = function (title, message) {
+    Vue.prototype.$successNotification = function ({title, message}) {
       return Vue.toasted.global.success({
         message: `
           <div style="display: flex; flex-direction: column">
@@ -89,7 +89,7 @@ const MyPlugin = {
     </div>`
       });
     }
-    Vue.prototype.$errorNotification = function (title, message) {
+    Vue.prototype.$errorNotification = function ({title, message}) {
       return Vue.toasted.global.error({
         message: `
           <div style="display: flex; flex-direction: column">

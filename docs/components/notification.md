@@ -58,38 +58,49 @@ Import icons using one of these two options:
 
   ```javascript
   import {vxNotification} from 'vuelix';
+  
+  Vue.use(vxNotification);
   ```
 
 - Option 2:
 
   ```javascript
   import vxNotification from 'vue-snackbar';
+  
+  Vue.use(vxNotification);
   ```
+<box>
+
+## Simple notification
+
+A basic notification that aims to reproduce Google Keep's snackbar behavior.
 
 <vuecode md>
 <div slot="demo">
   <Demos-Notification-Default />
+   <Demos-DemoBox language="javascript" code="
+handleClick(){
+this.$notification({title: 'my title', message: 'my description'});
+}
+"></Demos-DemoBox>
 </div>
 <div slot="code">
 
 ```html
 <template>
-  <div class="container">
-    <div class="row" v-for="theme in themes">
-      <p class="icon_label">{{ theme }}</p>
-      <vx-icon icon="delete" :themes="theme"/>
-      <vx-icon icon="delete_forever" :themes="theme"/>
-    </div>
-  </div>
+    <vx-button @click="handleCLick">Open simple notification</vx-button>
 </template>
 <script>
-  export default {
-    data () {
-      return {
-        themes: ['filled', 'outlined', 'rounded', 'sharp', 'two-tone']
-      }
+    export default {
+        methods: {
+            handleCLick() {
+                this.$notification({
+                    title: "Documentation Vuelix", 
+                    message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                })
+            }
+        },
     }
-  }
 </script>
 
 ```
@@ -97,4 +108,44 @@ Import icons using one of these two options:
 
 </div>
 </vuecode>
+</box>
+
+<box>
+
+## Themes
+<vuecode md>
+<div slot="demo">
+  <Demos-Notification-Colors />
+   <Demos-DemoBox language="javascript" code="
+handleClick(){
+this.$notification({title: 'my title', message: 'my description'});
+}
+"></Demos-DemoBox>
+</div>
+<div slot="code">
+
+```html
+<template>
+    <vx-button @click="handleCLick">Open simple notification</vx-button>
+</template>
+<script>
+    export default {
+        methods: {
+            handleCLick() {
+                this.$notification({
+                    title: "Documentation Vuelix", 
+                    message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                })
+            }
+        },
+    }
+</script>
+
+```
+
+
+</div>
+</vuecode>
+</box>
+
 </box>

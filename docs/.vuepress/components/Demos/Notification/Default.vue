@@ -1,26 +1,24 @@
-<template lang="html">
-  <div>
-    <vx-button @click="handleDefault">Default</vx-button>
-    <vx-button
-        danger
-        flat
-        @click="handleDefault">
-      Default
-    </vx-button>
+<template>
+  <div class="container">
+    <vx-button @click="handleCLick">Open simple notification</vx-button>
   </div>
 </template>
 <script>
 export default {
   methods: {
-    handleDefault(){
-      this.$toasted.global.default({
-        message: `
-          <div style="display: flex; flex-direction: column">
-            <h4 class="toasted-title">Documentation Vuelix</h4>
-         <p class="toasted-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>`
-      });
+    handleCLick() {
+      this.$notification({title: "Documentation Vuelix", message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."})
     }
   },
 }
 </script>
+
+
+<style>
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+</style>
