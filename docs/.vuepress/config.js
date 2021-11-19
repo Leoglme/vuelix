@@ -173,6 +173,8 @@ module.exports = {
         children: [
           '/components/alert',
           '/components/icon',
+          '/components/button',
+          '/components/notification',
           /*New Component*/
         ]
       },

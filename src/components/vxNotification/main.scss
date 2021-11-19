@@ -1,0 +1,135 @@
+.toasted-container {
+  transition: all 25s ease;
+  padding: 10px 0;
+  &.top-right, &.bottom-right {
+    right: 1% !important;
+  }
+  &.top-left, &.bottom-left{
+    right: 1% !important;
+  }
+}
+
+.toasted {
+  padding: 20px !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px -5px rgba(0,0,0, 0.05) !important;
+  overflow: hidden;
+  background: #fff !important;
+  margin: 3px 10px !important;
+  animation: revealRight .5s ease;
+  max-width: 340px !important;
+  opacity: 1 !important;
+  transition: all .25s ease,transform .3s ease .1s,max-height .25s ease,clip-path .5s ease .1s,-webkit-transform .3s ease .1s,-webkit-clip-path .5s ease .1s;
+
+  & i {
+    font-size: 18px;
+    margin-right: 16px;
+  }
+
+  & .toasted-content {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 1rem;
+  }
+
+  & .toasted-title {
+    font-size: 16px;
+  }
+
+  & .toasted__action.icon {
+    top: 8px;
+    right: 10px;
+    position: absolute;
+
+    & i {
+      width: 20px;
+      height: 20px;
+
+      &::after, &::before {
+        background: #000;
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        border-radius: 2px;
+        transition: all .3s ease;
+      }
+      &::after {
+        transform: rotate(45deg);
+      }
+      &::before {
+        transform: rotate(-45deg);
+      }
+    }
+    &:hover {
+      & i::after, & i::before {
+        width: 14px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &.error, &.success {
+    color: #fff !important;
+
+    & .toasted__action.icon i {
+      &::after, &::before {
+        background: #fff !important;
+      }
+    }
+  }
+
+  &.default {
+    color: rgb(44, 62, 80) !important;
+  }
+
+  &.error {
+    background: #ff4757 !important;
+  }
+  &.success {
+    background: #46c93a !important;
+  }
+
+  &:hover {
+    box-shadow: 0 10px 30px -5px rgba(0,0,0, 0.10) !important;
+    transform: translateY(-32px) !important;
+  }
+}
+
+.tooltip-inner {
+  background: var(--secondary) !important;
+  padding:5px 10px;
+  border-radius:12px;
+  font-size:.85rem;
+  max-width:350px;
+  min-width:30px;
+  min-height:30px;
+}
+
+.tooltip {
+  margin-left: 16px;
+}
+
+.bs-tooltip-right {
+  & .arrow {
+    display: none !important;
+  }
+}
+
+
+.bs-tooltip-right .tooltip-inner::after {
+  content:"" !important;
+  position:absolute !important;
+  background:inherit !important;
+  width:10px !important;
+  height:10px !important;
+  top:50% !important;
+  -webkit-transform:translateY(-50%) rotate(45deg) !important;
+  transform:translateY(-50%) rotate(45deg) !important;
+  z-index:-2 !important;
+}
+.bs-tooltip-right .tooltip-inner::after {
+  left: 0.5px !important;
+  border-radius:0 0 0 2px !important;
+}

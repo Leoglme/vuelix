@@ -71,12 +71,12 @@ yarn add vuelix
 Install the package in your project directory with:
 
 <Demos-DemoBox language="bash" plugins="command-line" code="
-npm install vuelix
+npm install vue-material-icon
 ">
 </Demos-DemoBox>
 
 <Demos-DemoBox language="bash" plugins="command-line" code="
-yarn add vuelix
+yarn add vue-material-icon
 ">
 </Demos-DemoBox>
 
