@@ -70,7 +70,7 @@ Vue.toasted.register('success', (payload) => {
 
 
 const MyPlugin = {
-  install(Vue, options) {
+  install(Vue) {
     Vue.prototype.$notification = function ({title, message}) {
       return Vue.toasted.global.default({
         message: `

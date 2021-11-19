@@ -124,32 +124,36 @@
     }
   }
 }
-.vx-button-$vx-colors {
-&.vx-button-filled {
-  background: getColor($vx-colors) !important;
-  &:hover {
-    box-shadow: 0 8px 25px -8px getColor($vx-colors);
+
+
+@each $color, $value in $vx-colors {
+  .vx-button-#{$color} {
+    &.vx-button-filled {
+      background: $value;
+      &:hover {
+        box-shadow: 0 8px 25px -8px $value;
+      }
+    }
+    &.vx-button-flat {
+      border: none !important;
+    }
+    &.vx-button-line {
+      color: $value;
+      border-color: rgba($value, 0.2);
+      .vx-button-linex {
+        background: $value;
+      }
+    }
+    &.vx-button-gradient {
+      background: #640064;
+      background-image: linear-gradient(30deg, $value 0%, rgba($value, 0.5) 100%) !important;
+      text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+    }
+    &.vx-button-relief {
+      background: $value;
+      box-shadow: 0 -3px 0 0 rgba(0,0,0,0.2) inset;
+    }
   }
-}
-&.vx-button-flat {
-  border: none !important;
-}
-&.vx-button-line {
-  color: getColor($vx-colors);
-  border-color: getColor($vx-colors, 0.2);
-  .vx-button-linex {
-    background: getColor($vx-colors);
-  }
-}
-&.vx-button-gradient {
-  background: #640064;
-  background-image: linear-gradient(30deg, getColor($vx-colors, 1) 0%, getColor($vx-colors, 0.5) 100%) !important;
-  text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
-}
-&.vx-button-relief {
-  background: getColor($vx-colors, 1);
-  box-shadow: 0 -3px 0 0 rgba(0,0,0,0.2) inset;
-}
 }
 .vx-button-$vx-colors.vx-button-border,
                      .vx-button-$vx-colors.vx-button-flat {

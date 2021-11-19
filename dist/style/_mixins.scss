@@ -1,4 +1,3 @@
 @function getColor($colorx, $alpha: 1) {
-   $res: unquote("rgba(var(--vs-"+colorx+"), "+alpha+")");
-    @return $res;
+  @return map-get($vx-colors, $colorx);
 }

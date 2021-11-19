@@ -5,7 +5,7 @@ set -e
 
 # build
 yarn build
-printf "${GREEN} Docs build running...\n"
+printf "${GREEN} Npm lib build running...\n"
 cd dist
 
 
