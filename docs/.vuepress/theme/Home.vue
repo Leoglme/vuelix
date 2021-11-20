@@ -1,18 +1,9 @@
 <template>
 
-  <div class="con-home vs-component">
+  <main>
 
     <div class="home">
-      <div v-if="data.heroImage" :class="{'doc-activo':doc}" class="doc-img">
-        <img :src="$withBase(data.heroImage)" alt="">
-      </div>
-      <div :class="{'git-activo':git}" class="flaticon-github git-img">
-
-      </div>
       <div :class="{'homeBackgroundComponent':data.heroBackgroundComponent}" class="home-init">
-        <div class="heroBackgroundComponent" :is="data.heroBackgroundComponent">
-
-        </div>
         <div class="hero">
 
           <h1 v-if="data.heroText" v-html="data.heroText"></h1>
@@ -87,7 +78,7 @@
 
 
     <Footer/>
-  </div>
+  </main>
 
 </template>
 
@@ -142,17 +133,6 @@ export default {
     margin-left: 30px
     min-width 460px;
 
-.doc-img
-  position: absolute;
-  transform: translate(-5%);
-  opacity: 0;
-  transition: all .3s ease;
-
-  > img
-    width: 50vw;
-    filter: grayscale(100%);
-    opacity: .080;
-
 .githubx
   padding: 0px
   width: 40px;
@@ -169,29 +149,6 @@ export default {
 
   &:hover
     box-shadow: 0px 0px 10px 0px $accentColor
-
-.doc-activo
-  opacity: 1 !important;
-  transform: translate(0%);
-
-.git-img {
-  opacity: 0;
-  transition: all .250s ease;
-  transform: translate(-5%);
-}
-
-.git-img:before {
-  font-size: 60rem !important;
-  position: absolute;
-  left: 100px;
-  top: 0px
-  color: rgb(247, 247, 247);
-}
-
-.git-activo {
-  opacity: 1;
-  transform: translate(0%) rotate(0deg);
-}
 
 .oculto-img
   transform: translate(0, -100%) !important;
@@ -370,7 +327,7 @@ export default {
   width: 100%
   margin 0px auto
 
-.con-home, .con-contributors
+.con-contributors
   padding-right 9rem
   width: 100%;
 
@@ -471,10 +428,6 @@ export default {
     text-align center
     color lighten($textColor, 25%)
 
-@media only screen and (max-width: 1100px)
-  .con-home
-    padding-right 0px
-
 @media (max-width: $MQMobile)
   #codefund_ad
     width 100% !important
@@ -517,12 +470,6 @@ export default {
 
           &:nth-child(odd)
             order 0
-
-  .con-home
-    footer
-      margin-top 200px
-
-
 @media (max-width: $MQMobileNarrow)
 
   .contribuitors
@@ -531,7 +478,7 @@ export default {
   .navbar
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-  .con-logo
+  .logo_container
     img
       margin-left: 0px;
       height: 1.8rem !important

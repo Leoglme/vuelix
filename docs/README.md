@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /svg/vuelix.svg
-heroText: <b>Vuelix</b> Frontend <a target="_blank" href="https://vuejs.org/" rel="noopener noreferrer">Vue</a> Components
+heroText: The React UI library you always wanted
 heroBackgroundComponent: city
 features:
 - title: <b>Experience</b> design

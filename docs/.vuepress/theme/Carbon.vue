@@ -100,7 +100,7 @@ div[id*="carbonads"] {
 }
 
 div[id*="carbonads"] {
-  background: var(--vs-theme-layout);
+  background: var(--vx-theme-layout);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   overflow: hidden;
