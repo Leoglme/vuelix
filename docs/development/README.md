@@ -11,7 +11,7 @@ API:
 
 <box header>
 
-Vuesax is a library of Vuejs components that facilitates front-end development and streamlines work with great visual quality.
+Vuelix is a library of Vuejs components that facilitates front-end development and streamlines work with great visual quality.
 
 </box>
 
@@ -20,7 +20,7 @@ Vuesax is a library of Vuejs components that facilitates front-end development a
 
 ## Quick-start CDN
 
-Start a project quickly using a CDN and let Vuesax do the magic.
+Start a project quickly using a CDN and let Vuelix do the magic.
 
 <Scrimba href="https://scrimba.com/c/crEd8hq" text="Try this lesson on Scrimba" />
 
@@ -35,7 +35,7 @@ Start a project quickly using a CDN and let Vuesax do the magic.
 ```bash
 
 # install
-npm install vuesax # OR yarn add vuesax
+npm install vuelix # OR yarn add vuelix
 
 ```
 
@@ -46,14 +46,14 @@ npm install vuesax # OR yarn add vuesax
 
 ## Use
 
-Vuesax is a Vuejs library. To use it, add the code below:
+Vuelix is a Vuejs library. To use it, add the code below:
 
 ```js
 import Vue from 'vue'
-import Vuesax from 'vuesax'
+import Vuelix from 'vuelix'
 
-import 'vuesax/dist/vuesax.css' //Vuesax styles
-Vue.use(Vuesax, {
+import 'vuelix/dist/vuelix.css' //vuelix styles
+Vue.use(Vuelix, {
   // options here
 })
 ```
@@ -69,8 +69,8 @@ Vue.use(Vuesax, {
 ```javascript
 
 import Vue from 'vue'
-import { vsButton, vsSelect, vsPopup } from 'vuesax'
-import 'vuesax/dist/vuesax.css'
+import { vsButton, vsSelect, vsPopup } from 'vuelix'
+import 'vuelix/dist/vuelix.css'
 
 Vue.use(vsButton)
 Vue.use(vsSelect)

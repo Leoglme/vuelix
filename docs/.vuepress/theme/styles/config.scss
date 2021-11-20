@@ -1,0 +1,23 @@
+// colors
+$accentColor: #42b883;
+$textColor: rgb(32, 38, 45);
+$borderColor: #eaecef;
+// $codeBgColor: #110d26;
+$codeBgColor: #f5f7fb;
+$arrowBgColor: #ccc;
+
+// layout
+$navbarHeight: 3rem;
+$sidebarWidth: 15rem;
+$contentWidth: 1200px;
+
+// responsive breakpoints
+$MQNarrow: 959px;
+$MQMobile: 800px;
+$MQMobileNarrow: 419px;
+$background: #ffffff;
+
+* {
+  box-sizing: border-box;
+  outline: none
+}

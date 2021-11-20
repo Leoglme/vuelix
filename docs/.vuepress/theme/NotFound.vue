@@ -2,7 +2,7 @@
   <div class="theme-container">
     <div class="content-notfound">
       <div class="con-404">
-        <a href="https://lusaxweb.github.io/vuesax/">
+        <a href="https://vuelix.com">
           <not-found/>
         </a>
 
@@ -10,13 +10,10 @@
       <div class="con-btns-404">
         <h2>Links</h2>
         <div class="">
-          <a href="https://lusaxweb.github.io/vuesax/">Vuesax</a>
-          <a href="https://lusaxweb.github.io/vuesax/vuesax/">Documents</a>
-          <a href="https://github.com/lusaxweb/vuesax">GitHub</a>
+          <a href="https://vuelix.com">Vuelix</a>
+          <a href="https://github.com/leoglme/vuelix">GitHub</a>
         </div>
       </div>
-      <!-- <h1>404</h1>
-      <blockquote>{{ getMsg() }}</blockquote> -->
     </div>
   </div>
 </template>

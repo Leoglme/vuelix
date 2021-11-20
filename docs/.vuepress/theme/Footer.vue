@@ -22,7 +22,7 @@
       <!-- <span :style="{'left':lineaL+'px','top':lineaL+'px'}" :class="{'lineaActiva':lineaActiva}" class="lineax"></span> -->
     </div>
     <div class="con-copy">
-      Copyright © 2020 vuesax.
+      Copyright © 2021 vuelix.
     </div>
   </footer>
 </template>

@@ -1,5 +1,5 @@
 import './main.styl'
-import Vuesax from '../../src'
+import Vuelix from '../../src'
 import Vuecode from 'viewcode/dist/vuecode.common.js'
 import 'viewcode/dist/vuecode.css'
 import demo from './theme/demo.vue'
@@ -11,7 +11,7 @@ export default ({
   siteData
 }) => {
   // ...apply enhancements to the app
-  Vue.use(Vuesax)
+  Vue.use(Vuelix)
   Vue.use(Vuecode,{
     theme:'flat'
   })

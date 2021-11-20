@@ -11,7 +11,7 @@ API:
 
 <box header>
 
-Vuesax has the main colors that are maintained throughout the application to facilitate the change and effective operation
+Vuelix has the main colors that are maintained throughout the application to facilitate the change and effective operation
 
 </box>
 <box>
@@ -114,12 +114,12 @@ export default {
 
 ## Customize Theme Colors
 
-We almost always need a personalized application with own colors. In Vuesax, you can change the main colors to those that you need and the branding that your application has.
+We almost always need a personalized application with own colors. In Vuelix, you can change the main colors to those that you need and the branding that your application has.
 
-When starting **Vuesax** tell it to use your colors. We add the new colors as parameters.
+When starting **Vuelix** tell it to use your colors. We add the new colors as parameters.
 
 ```css
-Vue.use(Vuesax, {
+Vue.use(Vuelix, {
   theme:{
     colors:{
       primary:'#5b3cc4',
@@ -158,7 +158,7 @@ this.$vs.theme({
 })
 ```
 
-By doing this, all **Vuesax** components in the application that use a primary color with change.
+By doing this, all **Vuelix** components in the application that use a primary color with change.
 
 Select one of the colors to change it and that all the components of this documentation have that color.
 
@@ -298,7 +298,7 @@ To change the variables we must first import them into a `.styl` file and change
 ```css
 // main.styl
 
-@import '~vuesax/dist/style/vuesax.styl'
+@import '~vuelix/dist/style/vuelix.styl'
 
 $vs-primary = 50,100,200
 

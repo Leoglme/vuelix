@@ -76,7 +76,6 @@
           </div>
         </div>
 
-        <home-templates/>
         <contributors :title="'Contributors'" :repo="this.$site.themeConfig.repo" contributors="all"/>
         <div class="contribuitors">
           <div class="con-contribuitors">
@@ -106,11 +105,10 @@ import trofeos from './trofeos.vue'
 import NavLink from './NavLink.vue'
 import Footer from './Footer.vue'
 import contributors from './contributors.vue'
-import homeTemplates from './HomeTemplates.vue'
 import Partners from './Partners.vue'
 
 export default {
-  components: {NavLink, Footer, contributors, trofeos, Partners, homeTemplates},
+  components: {NavLink, Footer, contributors, trofeos, Partners},
   data() {
     return {
       star: 0,

@@ -12,12 +12,12 @@ API:
   default: material-icons
 - name: color
   type: String
-  parameters: Vuesax color presets, RGB, HEX, html color presets
+  parameters: Vuelix color presets, RGB, HEX, html color presets
   description: Determines the icon pack. If not set, icon will default to Material Icons. ex. FA4 uses fa or fas, FA5 uses fas, far, or fal.
   default: black
 - name: bg
   type: String
-  parameters: Vuesax color presets, RGB, HEX, html color presets
+  parameters: Vuelix color presets, RGB, HEX, html color presets
   description: Sets the background color
   default: null
 - name: size

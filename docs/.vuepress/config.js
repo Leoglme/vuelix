@@ -4,7 +4,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: `/icon/favicon.ico` }]
   ],
-  ga:'UA-122319353-1',
+  ga:'UA-160622657-1',
   docsDir: 'docs',
   host:'localhost',
   port: 3000,
@@ -27,22 +27,6 @@ module.exports = {
             text:'Twitter',
             link:'https://twitter.com/dibodev'
           },
-          {
-            text:'Facebook',
-            link:'https://www.facebook.com/vuesax/'
-          },
-          {
-            text:'Behance',
-            link:'https://www.behance.net/ManuelRovira'
-          },
-          {
-            text:'Dribbble',
-            link:'https://dribbble.com/ManuelRovira'
-          },
-          {
-            text:'Codepen',
-            link:'https://codepen.io/lusaxweb/'
-          },
         ]
       },
       {
@@ -50,45 +34,36 @@ module.exports = {
         items:[
           {
             text:'Issues',
-            link:'https://github.com/lusaxweb/vuesax/issues'
+            link:'https://github.com/leoglme/vuelix/issues'
           },
           {
             text:'Edit Page',
-            link:'https://github.com/lusaxweb/vuesax/tree/master/docs'
+            link:'https://github.com/leoglme/vuelix/tree/master/docs'
           },
           {
             text:'Latest Releases',
-            link:'https://github.com/lusaxweb/vuesax/releases'
-          },
-          {
-            text:'Stackoverflow',
-            link:'https://stackoverflow.com/questions/tagged/vuesax'
+            link:'https://github.com/leoglme/vuelix/releases'
           },
           {
             text:'FAQ',
-            link:'https://github.com/lusaxweb/vuesax/wiki'
+            link:'https://github.com/leoglme/vuelix/wiki'
           },
         ]
       },
       {
         title:'More',
         items:[
-          { text: 'Blog', link: 'https://lusaxweb.github.io/vuesax-blog/' },
           {
-            text:'Lusaxweb',
-            link:'http://lusaxweb.net/'
+            text:'Dibodev',
+            link:'https://dibodev.com/'
           },
           {
             text:'Email',
-            link:'mailto:vuesax@gmail.com'
+            link:'mailto:contact@vuelix.com'
           },
           {
             text:'Pull request',
-            link:'https://github.com/lusaxweb/vuesax/pulls'
-          },
-          {
-            text:'Codepen Template',
-            link:'https://codepen.io/lusaxweb/pen/mxMKYr'
+            link:'https://github.com/leoglme/vuelix/pulls'
           },
         ]
       }
@@ -97,8 +72,6 @@ module.exports = {
   themeConfig: {
     // Assumes GitHub. Can also be a full GitLab url.
     repo: 'leoglme/vuelix',
-    // Customising the header label
-    // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: 'Contribute!',
     // Optional options for generating "Edit this page" link
     // if your docs are in a different repo from your main project:
@@ -120,31 +93,23 @@ module.exports = {
           {
             text: 'Social',
             items: [
-              { text: 'GitHub', link: 'https://github.com/lusaxweb/vuesax' },
-              { text: 'Discord', link: 'https://discord.gg/6AZNXEa' },
-              { text: 'Twitter', link: 'https://twitter.com/vuesax' },
-              { text: 'Facebook', link: 'https://www.facebook.com/vuesax/' },
-              { text: 'Behance', link: 'https://www.behance.net/ManuelRovira' },
-              { text: 'Dribbble', link: 'https://dribbble.com/ManuelRovira' },
-              { text: 'Codepen', link: 'https://codepen.io/lusaxweb/' },
-              { text: 'Medium', link: 'https://medium.com/@luisdanielrovira8' }
+              { text: 'GitHub', link: 'https://github.com/leoglme/vuelix' },
+              { text: 'Twitter', link: 'https://twitter.com/dibodev' }
             ]
           },
           {
             text: 'Help',
             items: [
-              { text: 'Issues', link: 'https://github.com/lusaxweb/vuesax/issues' },
-              { text: 'Edit Page', link: 'https://github.com/lusaxweb/vuesax' },
-              { text: 'Latest Releases', link: 'https://github.com/lusaxweb/vuesax/releases' },
+              { text: 'Issues', link: 'https://github.com/leoglme/vuelix/issues' },
+              { text: 'Edit Page', link: 'https://github.com/leoglme/vuelix' },
+              { text: 'Latest Releases', link: 'https://github.com/leoglme/vuelix/releases' },
             ]
           },
           {
             text: 'Contact',
             items: [
-              { text: 'Lusaxweb', link: 'http://lusaxweb.net' },
-              { text: 'Email', link: 'mailto:vuesax@gmail.com' },
-              { text: 'Pull Request', link: 'https://github.com/lusaxweb/vuesax/pulls' },
-              { text: 'Codepen Template', link: 'https://codepen.io/lusaxweb/pen/mxMKYr' }
+              { text: 'Dibodev', link: 'https://dibodev.com' },
+              { text: 'Email', link: 'mailto:contact@vuelix.com' }
             ]
           }
         ]
@@ -156,7 +121,7 @@ module.exports = {
         collapsable: false,
         children: [
           '/development/',
-          '/development/whyVuesax',
+          '/development/whyVuelix',
          ]
       },
       {
@@ -171,7 +136,6 @@ module.exports = {
         title: 'Components',
         collapsable: false,
         children: [
-          '/components/alert',
           '/components/icon',
           '/components/button',
           '/components/notification',

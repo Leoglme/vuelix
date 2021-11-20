@@ -1,11 +1,11 @@
 ---
 ---
 
-# Why Vuesax?
+# Why Vuelix?
 
 <box header>
 
-  We would love to explain to you why we created Vuesax, what advantages it has, and our purpose
+  We would love to explain to you why we created Vuelix, what advantages it has, and our purpose
 
 </box>
 
@@ -14,7 +14,7 @@
 
 ## Introduction
 
-Vuesax is a framework of components based on Vuejs; it is a framework that is designed from scratch to be incrementally adoptable.
+Vuelix is a framework of components based on Vuejs; it is a framework that is designed from scratch to be incrementally adoptable.
 
 The framework is focused on facilitating the development of applications, improving the design of the same without removing the necessary functionality. We want all the components to be independent in colors, shapes, and design for a freedom that we like all in front-end development, but without losing the speed of creation and production.
 
@@ -22,11 +22,11 @@ The framework is focused on facilitating the development of applications, improv
 
 <box>
 
-## Why Vuesax?
+## Why Vuelix?
 
-The truth is, Vuesax has a long way to go in terms of development. Components must be created, improved and fixed. For now, Vuesax should not be used for a real application. However, we are working very hard to achieve the stable version and have the strength to use it in any application.
+The truth is, Vuelix has a long way to go in terms of development. Components must be created, improved and fixed. For now, Vuelix should not be used for a real application. However, we are working very hard to achieve the stable version and have the strength to use it in any application.
 
-- Vuesax is a framework designed to have a lot of visual impact and that is always in trend with respect to design.
+- Vuelix is a framework designed to have a lot of visual impact and that is always in trend with respect to design.
 - Many components for the use and creation of an entire application
 - Adaptive design in all components
 - An open source community to create, improve, and fix any component or function
@@ -39,11 +39,11 @@ The truth is, Vuesax has a long way to go in terms of development. Components mu
 
 <box>
 
-## Support Vuesax
+## Support Vuelix
 
-Vuesax is just beginning and we love the contribution of our small, but talented community. If you like Vuesax, we invite you to help and contribute. It can be as little as a grammatical change in the documentation, or the development of a new component or improvement. Either way, we are very grateful for the support of the whole community.
+Vuelix is just beginning and we love the contribution of our small, but talented community. If you like Vuelix, we invite you to help and contribute. It can be as little as a grammatical change in the documentation, or the development of a new component or improvement. Either way, we are very grateful for the support of the whole community.
 
-This framework is open source and every day the community is working on improvements, components, and documentation. If you have a new idea, a problem using Vuesax, or simply see an error in the documentation, we would love your support! Improve Vuesax by opening an issue or making a pull request so that each day Vuesax is a better framework for our front-end community.
+This framework is open source and every day the community is working on improvements, components, and documentation. If you have a new idea, a problem using Vuelix, or simply see an error in the documentation, we would love your support! Improve Vuelix by opening an issue or making a pull request so that each day Vuelix is a better framework for our front-end community.
 
 </box>
 

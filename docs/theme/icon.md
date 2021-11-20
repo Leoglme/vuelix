@@ -12,12 +12,12 @@ API:
    default: material-icons
  - name: color
    type: String
-   parameters: Vuesax color presets, RGB, HEX, html color presets
+   parameters: Vuelix color presets, RGB, HEX, html color presets
    description: Determines the icon pack. If not set, icon will default to Material Icons. ex. FA4 uses fa or fas, FA5 uses fas, far, or fal.
    default: black
  - name: bg
    type: String
-   parameters: Vuesax color presets, RGB, HEX, html color presets
+   parameters: Vuelix color presets, RGB, HEX, html color presets
    description: Sets the background color
    default: null
  - name: size
@@ -52,7 +52,7 @@ API:
 To use the icon, use the `vx-icon` component. For the main parameter, pass the `icon` property that determines which icon to show. By default, the icon uses the **Google Material Icons** font library. Another library can be selected by passing the css class/classes for the library to `icon-pack`.  Only the Material Icons library is bundled with the framework.  Other libraries will have to be included implicitly.
 
 ::: tip
-Vuesax uses the **Google Material Icons** font library. For a list of all available icons, visit the official [Material Icons page](https://material.io/icons/).
+Vuelix uses the **Google Material Icons** font library. For a list of all available icons, visit the official [Material Icons page](https://material.io/icons/).
 
 FontAwesome and other fonts libraries are supported. Simply use the `icon-pack` with `fa` or `fas`. You still need to include the Font Awesome icons in your project.
 :::
@@ -103,7 +103,7 @@ FontAwesome and other fonts libraries are supported. Simply use the `icon-pack` 
 
 ## Color
 
-You can change the color of the icons as well, using color names, RGB, HEX, or Vuesax variables.
+You can change the color of the icons as well, using color names, RGB, HEX, or Vuelix variables.
 
 <vuecode md>
 <div slot="demo">

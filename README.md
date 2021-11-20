@@ -19,7 +19,7 @@ beautiful, and more accessible Vue applications. Follow your own design system.
   <a href="https://www.npmjs.com/package/vuelix">
     <img src="https://img.shields.io/npm/v/vuelix.svg" alt="Version">
   </a>
-  <a href="https://www.npmjs.com/package/vuesax"><img src="https://img.shields.io/npm/l/vuesax.svg" /></a>
+  <a href="https://www.npmjs.com/package/vuelix"><img src="https://img.shields.io/npm/l/vuelix.svg" /></a>
 </p>
 
 <a href="https://vuelix.com/" rel="noopener" target="_blank">
@@ -99,4 +99,4 @@ This library was created and is supported by [Dibodev](http://dibodev.com/)
 
 ## License
 
-[MIT](https://raw.githubusercontent.com/lusaxweb/vuesax/master/LICENSE)
+[MIT](https://raw.githubusercontent.com/leoglme/vuelix/master/LICENSE)
