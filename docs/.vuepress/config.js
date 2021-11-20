@@ -25,7 +25,7 @@ module.exports = {
           },
           {
             text:'Twitter',
-            link:'https://twitter.com/dibodev'
+            link:'https://twitter.com/VuelixUI'
           },
         ]
       },

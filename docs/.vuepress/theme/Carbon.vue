@@ -3,9 +3,6 @@ export default {
   render (h) {
     return h('div', { class: 'carbon-ads' })
   },
-  // mounted () {
-  //   this.load()
-  // },
   methods: {
     load () {
       const s = document.createElement('script')

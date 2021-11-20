@@ -20,17 +20,17 @@ export default {
   computed: {
     titlex () {
       let titlex = 'Coffe'
-      if (this.ramdom == 2) {
+      if (this.ramdom === 2) {
         titlex = 'Pizza'
-      } else if (this.ramdom == 3) {
+      } else if (this.ramdom === 3) {
         titlex = 'Bronze'
-      } else if (this.ramdom == 4) {
+      } else if (this.ramdom === 4) {
         titlex = 'Silver'
-      } else if (this.ramdom == 5) {
+      } else if (this.ramdom === 5) {
         titlex = 'Gold'
-      } else if (this.ramdom == 6) {
+      } else if (this.ramdom === 6) {
         titlex = 'Diamond'
-      } else if (this.ramdom == 7) {
+      } else if (this.ramdom === 7) {
         titlex = 'Special'
       }
       return titlex

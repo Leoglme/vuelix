@@ -16,14 +16,6 @@
         </router-link>
       </li>
     </ul>
-    <div v-if="contributors == 'all'" class="con-btns-contribuitors">
-      <button type="button" name="button">
-        <!-- <a href="">Contribuitors</a> -->
-        <router-link
-          to="/contribuitors/"
-        >Contributors</router-link>
-      </button>
-    </div>
   </div>
 </template>
 

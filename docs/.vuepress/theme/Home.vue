@@ -9,9 +9,6 @@
       <div :class="{'git-activo':git}" class="flaticon-github git-img">
 
       </div>
-      <div :class="{'git-activo':discord}" class="doc-img">
-        <img :src="$withBase('/Discord-Logo-White.svg')" alt="">
-      </div>
       <div :class="{'homeBackgroundComponent':data.heroBackgroundComponent}" class="home-init">
         <div class="heroBackgroundComponent" :is="data.heroBackgroundComponent">
 
@@ -76,13 +73,9 @@
           </div>
         </div>
 
-        <contributors :title="'Contributors'" :repo="this.$site.themeConfig.repo" contributors="all"/>
         <div class="contribuitors">
           <div class="con-contribuitors">
             <contributors :title="'Contributors'" :repo="this.$site.themeConfig.repo" contributors="all"/>
-          </div>
-          <div class="con-svg-trofeos">
-            <trofeos/>
           </div>
         </div>
 
@@ -100,15 +93,13 @@
 
 <script>
 
-
-import trofeos from './trofeos.vue'
 import NavLink from './NavLink.vue'
 import Footer from './Footer.vue'
 import contributors from './contributors.vue'
 import Partners from './Partners.vue'
 
 export default {
-  components: {NavLink, Footer, contributors, trofeos, Partners},
+  components: {NavLink, Footer, contributors, Partners},
   data() {
     return {
       star: 0,
